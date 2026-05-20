@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.team-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #002147;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.text {
+    color: #555555;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 33, 71, 0.15);
+    padding: 35px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 33, 71, 0.08);
+    border-color: #4da6ff;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #002147;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #002147;
+    background-color: #f4f7f6;
+}
+
+h2 {
+    color: #002147;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+h3 {
+    color: #4da6ff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 33, 71, 0.15);
+    background-color: #ffffff;
+    color: #002147;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: #002147;
+    color: #ffffff;
+    border-color: #002147;
+}
+
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team-section {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.məzmun {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+.kicik-yazı {
+  color: #003366;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.dugme {
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dugme:hover {
+  background-color: #002244;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #003366;
+  border-bottom: 1px solid rgba(0, 51, 102, 0.2);
+}
+
+nav .logo {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-linklər a {
+  color: #cccccc;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+.nav-linklər a:hover, .nav-linklər a.aktiv {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid rgba(0, 51, 102, 0.2);
+}
+
+.footer-logo {
+  color: #003366;
+  font-weight: bold;
+}
+
+.footer-yazı {
+  color: #666666;
+}
+
+.haqqimizda-ust {
+  margin-bottom: 30px;
+}
+
+.haqqimizda-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.haqqimizda-header-text {
+  flex: 1;
+}
+
+.aztu-logo-img {
+  width: 110px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.ust-statlar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-top: 30px;
+  border: 1px solid rgba(0, 51, 102, 0.2);
+}
+
+.stat-blok {
+  text-align: center;
+}
+
+.stat-reqem {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: #003366;
+}
+
+.stat-ad {
+  font-size: 14px;
+  color: #666666;
+}
+
+.haqqimizda-metn {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.haqqimizda-metn h2, .bolme-basliği {
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+.haqqimizda-metn p {
+  margin-bottom: 15px;
+  color: #555555;
+}
+
+.deyerler {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  color: #555555;
+}
+
+.deyerler li {
+  margin-bottom: 8px;
+}
+
+.kart-grid {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.kart {
+  flex: 1;
+  background-color: #f8f9fa;
+  border: 1px solid rgba(0, 51, 102, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.kart-ikon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.kart h3 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.kart p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+.kart-teq {
+  display: inline-block;
+  background-color: rgba(0, 51, 102, 0.1);
+  color: #003366;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.elaqe-ust {
+  margin-bottom: 40px;
+}
+
+.elaqe-ust p {
+  color: #666666;
+}
+
+.elaqe-grid {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.forma {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.forma label {
+  display: block;
+  color: #003366;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.forma input, .forma textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 51, 102, 0.2);
+  color: #333333;
+  border-radius: 4px;
+}
+
+.forma input:focus, .forma textarea:focus {
+  border-color: #003366;
+  outline: none;
+}
+
+.forma textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+.forma .dugme {
+  align-self: flex-start;
+}
+
+.elaqe-yan {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.elaqe-kart {
+  background-color: #f8f9fa;
+  border: 1px solid rgba(0, 51, 102, 0.2);
+  padding: 24px;
+  border-radius: 5px;
+}
+
+.elaqe-kart h3 {
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+.elaqe-kart p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.elaqe-kart .dugme {
+  width: 100%;
+}
+
+.link-satir {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: #333333;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f0f4f8;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 51, 102, 0.1);
+}
+
+.link-satir:last-child {
+  margin-bottom: 0;
+}
+
+.link-satir > span {
+  font-size: 20px;
+  color: #003366;
+  width: 24px;
+  text-align: center;
+}
+
+.link-satir div {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-alt {
+  font-size: 12px;
+  color: #666666;
+  margin-top: 2px;
+}
+

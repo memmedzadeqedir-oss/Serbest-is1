@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzTU Kiber Klub - Ana Səhifə</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Naviqasiya Menyusu */
+        nav {
+            background-color: #002147;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-logo {
+            height: 60px; /* Loqonun ölçüsü */
+            width: auto;
+            border-radius: 5px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #4da6ff;
+        }
+
+        /* Giriş (Hero) Bölməsi */
+        .hero {
+            background-color: #003366;
+            color: white;
+            padding: 100px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 500px;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 120px; 
+            max-width: 1250px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 350px;
+            text-align: left;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+            line-height: 1.2;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin: 20px 0;
+            color: #ccddff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .hero-image {
+            width: 500px; /* Bina şəkli */
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        /* Statistikalar */
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 80px 20px;
+            background-color: white;
+        }
+
+        .stat-box {
+            text-align: center;
+            margin: 20px;
+            padding: 35px;
+            width: 170px;
+            background-color: #f4f7f6;
+            border-radius: 15px;
+            border-bottom: 5px solid #002147;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .stat-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .stat-box h3 {
+            font-size: 2.5rem;
+            color: #002147;
+            margin: 0 0 10px 0;
+        }
+
+        .stat-box p {
+            margin: 0;
+            font-weight: bold;
+            color: #555;
+            text-transform: uppercase;
+        }
+
+        /* Alt hissə (Footer) */
+        footer {
+            background-color: #001a33;
+            color: #aaa;
+            text-align: center;
+            padding: 30px;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #4da6ff;
+            text-decoration: underline;
+        }
+
+        /* Mobil telefonlar üçün */
+        @media (max-width: 900px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 50px;
+            }
+            .hero-text {
+                text-align: center;
+            }
+            .hero-image {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="https://www.aztu.edu.az/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0u7LiaKRhaSV4Y3_3FhlkUQ-9VrMSHMW3ig&s" alt="AzTU Logo" class="nav-logo">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Ana Səhifə</a>
+            <a href="haqqimizda.html">Haqqımızda</a>
+            <a href="fealiyyet.html">Fəaliyyət</a>
+            <a href="komanda.html">Komanda</a>
+            <a href="elaqe.html">Əlaqə</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>AzTU KİBER KLUB</h1>
+                <h2>Azərbaycan Texniki Universiteti<br>Kiber Təhlükəsizlik Tələbə Klubu</h2>
+                <p>"Məqsədimiz - nəzəriyyəni praktikaya çevirmək, real bacarıqlar inkişaf etdirmək."</p>
+            </div>
+            <img src="https://www.aztu.edu.az/web_admin/upload/files/aztu.edu.az/news/12-2023/IMG_9292%20(1).jpg" alt="AzTU Bina" class="hero-image">
+        </div>
+    </header>
+
+    <section class="stats-container">
+        <div class="stat-box">
+            <h3>6</h3>
+            <p>Aktiv Üzv</p>
+        </div>
+        <div class="stat-box">
+            <h3>0</h3>
+            <p>Turnir</p>
+        </div>
+        <div class="stat-box">
+            <h3>0</h3>
+            <p>Tədbir</p>
+        </div>
+        <div class="stat-box">
+            <h3>1+</h3>
+            <p>İl Təcrübə</p>
+        </div>
+    </section>
+ 
+    <footer>
+        <p>&copy; 2026 AzTU Kiber Klub | <a href="https://www.aztu.edu.az/" target="_blank">Azərbaycan Texniki Universiteti</a></p>
+    </footer>
+
+</body>
+</html>
